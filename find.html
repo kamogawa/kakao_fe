@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>友達 - Kokoa Clone</title>
+    <title>検索 - Kokoa Clone</title>
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -24,7 +24,7 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">友達</h1>
+      <h1 class="screen-header__title">検索</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
         <span><i class="fas fa-music fa-lg"></i></span>
@@ -32,44 +32,53 @@
       </div>
     </header>
 
-    <a id="friends-display-link">
-      <i class="fas fa-info-circle"></i> 友達名表示
-      <i class="fas fa-chevron-right fa-xs"></i>
-    </a>
-
-    <main class="friends-screen">
-      <div class="user-commponent">
-        <div class="user-component__column">
-          <img
-            src="https://avatars.githubusercontent.com/u/19706340"
-            class="user-component__avatar user-component__avatar--xl"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">ソニー</h4>
-            <h6 class="user-component__subtitle">hogehoge</h6>
-          </div>
+    <main class="main-screen">
+      <div class="find-icons">
+        <div class="find-icons__icon">
+          <i class="fas fa-qrcode"></i>
+          <span>QR コード</span>
         </div>
-        <div class="user-component__column"></div>
+        <div class="find-icons__icon">
+          <i class="far fa-address-book"></i>
+          <span>連絡先で追加</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="fas fa-fingerprint"></i>
+          <span>IDで追加</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="far fa-envelope"></i>
+          <span>招待</span>
+        </div>
       </div>
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span>チャンネル</span>
-          <i class="fas fa-chevron-up fa-xs"></i>
+      <div class="recommended-friends">
+        <h6 class="recommended-friends__title">友達おすすめ</h6>
+        <span>おすすめの友達はいません。</span>
+      </div>
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <h4>オープンチャット</h4>
+          <span>オープンチャットホーム
+            <i class="fas fa-chevron-right fa-xs"></i>
+          </span>
         </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="https://avatars.githubusercontent.com/u/19706340"
-              class="user-component__avatar user-component__avatar--sm"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title　user-component__title--not-bold">チャンネル</h4>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#BTS</h5>
+            <h6 class="open-post__hashtags">#bts#army</h6>
+            <div class="open-post__members">
+              <img src="https://avatars.githubusercontent.com/u/19706340"/>
+              <span class="open-post__member-count">802 members</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">Active</span>
             </div>
           </div>
-          <div class="user-component__column">
-            <div>
-              <span>2</span>
-              <i class="fas fa-chevron-right fa-xs"></i>
+        </div>
+        <div class="open-post__column">
+          <div class="open-post__photo">
+            <img src="https://avatars.githubusercontent.com/u/19706340" />
+            <div class="open-post__heart-count">
+              <i class="fas fa-heart fa-xs"></i><span>326</span>
             </div>
           </div>
         </div>
@@ -81,7 +90,7 @@
         <li class="nav__btn">
           <a class="nav__link" href="friends.html">
             <span class="nav__notification badge">1</span>
-            <i class="fas fa-user fa-2x"></i>
+            <i class="far fa-user fa-2x"></i>
           </a>
         </li>
         <li class="nav__btn">
